@@ -9,7 +9,8 @@ def api():
     track = request.args.get('track')
     
     current_day = datetime.datetime.utcnow().strftime('%A')
-    utc_time = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+    utc_time = (datetime.datetime.utcnow() + datetime.timedelta(hours=1)).strftime('%Y-%m-%dT%H:%M:%SZ')
+
     
     # Assuming you're running this script from a GitHub repo
     github_file_url = "https://github.com/Samdami/HNG/blob/main/Stage1.py"
