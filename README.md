@@ -1,24 +1,25 @@
-#Objective
+<h1>Objective</h1>
+
 Create and host an endpoint using any programming language of your choice.<br>
 The endpoint should take two GET request query parameters and return specific information in JSON format.<br>
 
 
-Requirements
-The information required includes:
-Slack name
-Current day of the week
-Current UTC time (with validation of +/-2)
-Track
-The GitHub URL of the file being run
-The GitHub URL of the full source code.
-A  Status Code of Success
+Requirements<br>
+The information required includes:<br>
+Slack name<br>
+Current day of the week<br>
+Current UTC time (with validation of +/-2)<br>
+Track<br>
+The GitHub URL of the file being run<br>
+The GitHub URL of the full source code.<br>
+A  Status Code of Success<br>
 
 
 
 
 
-JSON
-{
+<h1>JSON</h1>
+<p>{
   "slack_name": "example_name",
   "current_day": "Monday",
   "utc_time": "2023-08-21T15:04:05Z",
@@ -26,9 +27,11 @@ JSON
   "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
   "github_repo_url": "https://github.com/username/repo",
   "status_code": 200
-}
-Acceptance Criteria
-Endpoint Creation: Provide a publicly accessible endpoint.
+}</p>
+
+<h2>Acceptance Criteria</h2>
+
+<p>Endpoint Creation: Provide a publicly accessible endpoint.
 GET Parameters: The endpoint should accept two GET request query parameters: slack_name and track.
        E.g.: http://example.com/api?slack_name=example_name&track=backend.
 Slack Name: The response should include the slack_name passed as a GET request query parameter.
@@ -42,10 +45,5 @@ JSON Format: The endpoint's response should adhere to the specified JSON format.
 Testing: Before submission:
 Ensure the endpoint is accessible.
 Check the returned JSON against the defined format.
-Validate the correctness of each data point in the JSON response.
-Submission Mode
-Please follow these submission guidelines
-Get into your DM
-Type /grade <your-api-endpoint-url-with-the-query-parameters>
-E.g: /grade http://example.com/api?slack_name=example_name&track=backend
-Check your result
+Validate the correctness of each data point in the JSON response.</p>
+
