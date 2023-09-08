@@ -20,18 +20,18 @@ A  Status Code of Success<br>
 
 <h1>JSON</h1>
 <p>{
-  "slack_name": "example_name",
-  "current_day": "Monday",
-  "utc_time": "2023-08-21T15:04:05Z",
-  "track": "backend",
-  "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",
-  "github_repo_url": "https://github.com/username/repo",
-  "status_code": 200
+  "slack_name": "example_name",<br>
+  "current_day": "Monday",<br>
+  "utc_time": "2023-08-21T15:04:05Z",<br>
+  "track": "backend",<br>
+  "github_file_url": "https://github.com/username/repo/blob/main/file_name.ext",<br>
+  "github_repo_url": "https://github.com/username/repo",<br>
+  "status_code": 200<br>
 }</p>
 
 <h2>Acceptance Criteria</h2>
 
-<p>Endpoint Creation: Provide a publicly accessible endpoint.
+<p>Endpoint Creation: Provide a publicly accessible endpoint.<br>
 GET Parameters: The endpoint should accept two GET request query parameters: slack_name and track.
        E.g.: http://example.com/api?slack_name=example_name&track=backend.
 Slack Name: The response should include the slack_name passed as a GET request query parameter.
